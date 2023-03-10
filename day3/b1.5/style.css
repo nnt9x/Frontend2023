@@ -1,0 +1,23 @@
+h2{
+    color: green;
+    text-align: center;
+}
+
+.c1{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.c2{
+    font-style: italic;
+}
+.c3{
+    /* color: red; */
+    color: orange;
+    font-style: italic;
+    font-family: monospace;
+
+}
+pre{
+    background-color: gray;
+    color: blue;
+}
