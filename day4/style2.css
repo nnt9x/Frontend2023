@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  #container {
+    width: 1000px;
+    height: 900px;
+    background-color: #2e2e2e;
+    color: white;
+    /* Can giua */
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  #header {
+    width: 1000px;
+    height: 120px;
+    /* background-color: aqua; */
+    box-sizing: border-box;
+  }
+  #navigation{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+  }
+  #content{
+    height: 550px;
+    width: 700px;
+    box-sizing: border-box;
+    /* background-color: red; */
+    float: left;
+  }
+  #sidebar{
+    height: 550px;
+    width: 300px;
+    box-sizing: border-box;
+    /* background-color: bisque; */
+    float: left;
+  }
+  #footer{
+    height: 100px;
+    width: 100%;
+    /* background-color: blueviolet; */
+  }
