@@ -1,0 +1,33 @@
+#container{
+    width: 950px;
+    height: 850px;
+    background-color: pink;
+    position: relative;
+}
+#orange{
+    width: 500px;
+    height: 400px;
+    background-color: orange;
+    position: absolute;
+    left: 50px;
+    bottom: 200px;
+    z-index: 1;
+}
+#white{
+    height: 300px;
+    width: 550px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    /* Z index cang lớn -> phần tử càng dc hiển thị lên trênn */
+    z-index: 2;
+}
+#red{
+    width: 100px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    left: 150px;
+    bottom: 50px;
+}
