@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo bootstrap 5</title>
+    <!-- Gắn link CSS tại đây -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+        #header{
+            height: 100px;
+            /* background-color:royalblue; */
+        }
+        #navigation{
+            height: 80px;
+            background-color: gray;
+        }
+    </style>
+
+  </head>
+  <body>
+    <!-- Toan bo noi dung website sẽ nằm trong 1 container lớn -->
+    <div class="conatiner-md">
+        <!-- Header -->
+        <div id="header" class="container-fluid" >
+            <!-- Logo -->
+            <img style="height: 100px;" class="img-fluid rounded-circle" src="https://designs.vn/wp-content/images/09-08-2013/logo_lagi_8_resize.JPG">
+            <span class="display-4">MY LOGO</span>
+        </div>
+        <!-- Menu -->
+        <div id="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <!-- Content - sidebar -->
+        <div class="container-fluid row">
+            <div class="col-8" style="min-height: 80vh ;">
+                <p>Hình ảnh xe</p>
+                <img class="img-fluid" src="https://img.uhdpaper.com/wallpaper/sports-car-futuristic-mountain-sunset-scenery-digital-art-537@0@i" alt="" srcset="">
+                <p>Ô tô (hay xe hơi hay xe con hoặc car) là loại phương tiện giao thông chạy bằng 4 bánh có chở theo động cơ của chính nó. Tên gọi ô-tô được nhập từ tiếng Pháp (automobile), tên tiếng Pháp xuất phát từ từ auto (tiếng Hy Lạp, nghĩa là tự thân) và từ mobilis (tiếng La Tinh, nghĩa là vận động). Từ automobile ban đầu chỉ những loại xe tự di chuyển được gồm xe không ngựa và xe có động cơ. Còn từ ô tô trong tiếng Việt chỉ dùng để chỉ các loại có 4 bánh. Chữ "xe hơi" bắt nguồn từ chữ Hoa 汽車, phát âm theo Hán Việt là khí xa. Còn người Nhật gọi xe hơi là 自動車 (Tự động xa) nghĩa là xe tự động. Các kiểu khác nhau của xe hơi gồm các loại xe: xe buýt, xe tải.
+
+                    Có khoảng 1,32 tỷ chiếc xe được sử dụng trên toàn thế giới vào năm 2016.[2] Khi lần đầu tiên ra mắt, xe hơi được hoan nghênh như một (phương tiện) cải tiến về môi trường so với ngựa. Trước khi nó ra mắt ở thành phố New York; hơn 10,000 tấn phân hàng ngày được dọn khỏi các đường phố. Tuy nhiên, năm 2006, các xe hơi là một trong những nguồn gây ô nhiễm không khí và tiếng ồn cũng như ảnh hưởng tới sức khoẻ trên khắp thế giới.</p>
+
+            </div>
+            <div class="col-4" style="min-height: 80vh;">
+                <p>Danh muc hình ảnh</p>
+                <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">An active item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid">
+            Footer
+        </div>
+
+        
+    </div>
+    <!-- Link JavaScript tai day -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
