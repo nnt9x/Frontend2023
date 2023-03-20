@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+</head>
+<body>
+    <!-- C1: Viết code JavaScript trong thẻ <script></script> -->
+    <!-- C2: nhúng file JavaScript  -->
+
+    <h1 id="title">Hello, Welcome to JavaScript</h1>
+    <!-- Button -->
+    <button onclick="func1()" >UpperCase</button> 
+    <br><br>
+    <button onclick="func2()">LowerCase</button>
+
+    <!-- JavaScript nên đặt ở dưới cùng trong body của HTML -->
+    <script>
+        function func1(){
+            // Biến javaScript -> link thẻ h1 có id = "title"
+            let vH1 = document.getElementById("title");
+            // Thay đổi giá trị bên trong h1
+            let s = vH1.innerHTML.toUpperCase();
+            // Gán giá trị vH1 = s
+            vH1.innerHTML = s;
+            // Thay đổi màu H1 -> đỏ
+            vH1.style.color = "red";
+        }
+        function func2(){
+            // Biến javaScript -> link thẻ h1 có id = "title"
+            let vH1 = document.getElementById("title");
+            // Thay đổi giá trị bên trong h1
+            let s = vH1.innerHTML.toLowerCase();
+            // Gán giá trị vH1 = s
+            vH1.innerHTML = s;
+            // Thay đổi màu H1 -> xanh
+            vH1.style.color= "royalblue";
+        }
+
+
+    </script>
+
+</body>
+</html>
