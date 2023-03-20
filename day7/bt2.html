@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="webBody">
+    <div>
+        <img id="bongDen" width="100px" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+        
+        <button onclick="congTacDen()" id="congTac">Bật đèn</button>
+    </div>
+    <script>
+        var trangThai = "tat";
+        function congTacDen(){
+            // Buoc 1: Tao bien link den view Bong Den
+            let vBongDen = document.getElementById("bongDen");
+            // Buoc 2: Thay doi hinh anh -> dua vao trang thai
+
+            if(trangThai == "tat"){
+                console.log("Bat den");
+                // Bat den 
+                vBongDen.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+                trangThai = "bat";
+
+                document.getElementById("congTac").innerHTML="Tắt đèn";
+                // background-color => backgroundColor
+                document.getElementById("webBody").style.backgroundColor = "#FCF3CF";
+            }
+            else if(trangThai == "bat"){
+                console.log("Tat den");
+                // Tat den 
+                vBongDen.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+                trangThai = "tat";
+                document.getElementById("congTac").innerHTML="Bật đèn";
+
+                document.getElementById("webBody").style.backgroundColor = "#CACFD2";
+            }
+        }
+    </script>
+</body>
+</html>

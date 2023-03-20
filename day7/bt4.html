@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>
+      Number A: <input type="number" id="numberA" placeholder="Số A" />
+    </label>
+    <br />
+    <label>
+      Number B: <input type="number" id="numberB" placeholder="Số B" />
+    </label>
+    <br />
+    <p id="result">Kết quả</p>
+
+    <br />
+    <button onclick="sum()">Tổng</button>
+
+    <!-- JavaScript -->
+    <script>
+      function sum() {
+        // Buoc 1: lay gia tri trong input A, B
+        let a = parseFloat(document.getElementById("numberA").value);
+        let b = parseFloat(document.getElementById("numberB").value);
+        // Buoc 2: Tinh tong
+        let t = a + b;
+
+        // Buoc 3: Hien thi -> gan vao p
+        document.getElementById("result").innerHTML = "Kết quả: " + t;
+      }
+    </script>
+  </body>
+</html>

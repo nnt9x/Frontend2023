@@ -11,3 +11,18 @@ Kích thước 400x400.
 
 (Nếu có thể -> dùng bootstrap 5 -> tạo ảnh tròn)
 
+BT2. Tạo 1 file HTML có body 
+
+<img id="bongDen" src="">
+
+Có 1 button để thay đổi trang thái bóng đèn.
+Click lần 1 -> đèn sáng
+
+Click lần 2 -> đèn tắt
+Và cứ luân phiên.
+
+* BT3. Tương tự bài 2, nhưng đèn sẽ bật khi di chuột
+và đèn sẽ tắt khi di chuột ra bên ngoài.
+
+BT4. Nhập vào 2 số a và b. In ra tổng, hiệu , tích, thương
+
