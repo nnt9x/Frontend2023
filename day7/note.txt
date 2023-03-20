@@ -1,0 +1,13 @@
+BT1. Tạo 1 file HTML trong body có 1 thẻ <img/>
+có thuộc tính src="";
+
+Tạo 2 button:
+
+Button: Cat -> ảnh hiển thị hình con mèo
+Button: Dog -> ảnh hiển thị hình con chó
+
+Mặc định hiển thị màu trắng, border màu đen, 1 px
+Kích thước 400x400.
+
+(Nếu có thể -> dùng bootstrap 5 -> tạo ảnh tròn)
+
