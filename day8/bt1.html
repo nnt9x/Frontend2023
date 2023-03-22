@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BT 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kiểm tra số âm hay số dương?</h1>
+      <input id="myNumber" type="number" placeholder="Nhập số nguyên:" />
+      <br />
+      <button onclick="kiemTraSo()">Kiểm tra</button>
+    </div>
+    <script>
+      function kiemTraSo() {
+        // Bước 1: Lấy ra số trong ô input
+        let vInput = document.getElementById("myNumber");
+        let number = parseFloat(vInput.value);
+        // Bước 2:
+        if (number < 0) {
+          alert("Số âm!");
+        }
+
+        if (number == 0) {
+          alert("Không âm không dương!");
+        }
+
+        if (number > 0) {
+          alert("Số dương!");
+        }
+      }
+    </script>
+  </body>
+</html>

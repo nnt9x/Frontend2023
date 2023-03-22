@@ -1,0 +1,9 @@
+BT1. Nhập 1 số từ bàn phím. In ra số đó là số âm hay số dương?
+
+Mở rộng: tạo giao diện từ HTML,
+
+Kết quả: nằm trong 1 thẻ p có class display-1 (bootstrap5)
+
+Nếu số âm -> nền body chuyển thành màu đỏ 
+Nếu số dương > nền body chuyển thành màu xanh
+Nếu bằng 0-> nền body chuyển thành màu trăng
