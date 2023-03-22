@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      #result {
+        color: red;
+      }
+    </style>
+  </head>
+  <body id="mBody">
+    <div class="container text-center">
+      <h1>Website tính tiền điện</h1>
+      <input
+        id="number"
+        class="form-control"
+        type="number"
+        placeholder="Nhập số điện"
+      />
+      <br />
+      <button onclick="tinhTienDien()" class="btn btn-primary">Tính</button>
+      <p>Quý khách phải trả <span id="result"></span> VND</p>
+      <!-- Dưới có bảng -> tự làm -->
+    </div>
+
+    <script>
+      function tinhTienDien() {
+        // Bước 1: lấy dữ liệu input
+        let vInput = document.getElementById("number");
+
+        let x = parseInt(vInput.value);
+        if (x < 0) {
+          document.getElementById("mBody").style.backgroundColor = "red";
+          alert("Không hợp lệ");
+
+          return;
+        }
+
+        // Tinh tien
+        let t = 0;
+
+        if (x > 0 && x <= 100) {
+          t = x * 1000;
+        }
+        if (x > 100 && x <= 150) {
+          t = 100 * 1000 + (x - 100) * 1200;
+        }
+        if (x > 150 && x <= 200) {
+          t = 100 * 1000 + 50 * 1200 + (x - 150) * 2000;
+        }
+        if (x > 200) {
+          t = 100 * 1000 + 50 * 1200 + 50 * 2000 + (x - 200) * 2500;
+        }
+
+        let vResult = document.getElementById("result");
+        
+        let soTien = t.toLocaleString('vi-VN', {style : 'currency', currency : 'VND'});
+
+        vResult.innerHTML = soTien;
+
+
+      }
+    </script>
+  </body>
+</html>
