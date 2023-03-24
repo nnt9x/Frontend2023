@@ -110,3 +110,29 @@ if (a != 0) {
   console.log("Vô nghiệm");
 }
 
+// Switch - case (làm việc với các giá trị cụ thể)
+// Nhập vào tháng -> in ra số ngày tương ứng.
+
+let month = 13;
+switch(month){
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        console.log("31 ngày");
+        break;
+    case 2:
+        console.log("Có 28 hoặc 29 ngày");
+    default:
+        if(month < 1 || month > 12){
+            console.log("Không hợp lê");
+        }
+        else{
+            console.log("Có 30 ngày");
+        }
+
+}
+
