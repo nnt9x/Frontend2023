@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+        .red{
+            color: red;
+        }
+        .blue{
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        
+    </div>
+
+    <script>
+        const vMain = document.getElementById("main");
+        for(let i = 1; i <= 10; i++){
+            // Mỗi lần lặp -> thêm 1 thẻ p vào bên trong vMain
+            const p = document.createElement("p");
+            // <p></p>
+            const content = document.createTextNode(i);
+            // content = 1, 2, 3
+
+            p.appendChild(content);
+            // <p>1</p>
+
+            if(i % 2 == 0){
+                p.classList.add("red");
+                // <p class="red">1</p>
+            }
+            else{
+                p.classList.add("blue");
+                // <p class="blue">1</p>
+            }
+            
+            vMain.appendChild(p);
+            // Nếu i chẵn -> text màu đỏ ?
+            // Nếu i lẻ -> text màu xanh ?
+        }
+    </script>
+</body>
+</html>
