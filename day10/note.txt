@@ -6,11 +6,16 @@ Font của các số đó tăng dần
 <p>2</p> -> fontsize= 2
 <p>4</p> -> fontsize = 4
 
-BT2. Nhập x, kiểm tra x có phải là số nguyên tố hay ko?
+BT3. Nhập x, kiểm tra x có phải là số nguyên tố hay ko?
 (Ko cân làm giao diện)
 
-BT3. Tìm ước chung lớn nhất của hai số a và b ?
+// VD: x = 5 ?? i -> [2, 4]
+// x % 2, x % 3, x % 4 -> là số nguyên tố
+// x = 10? 
+
+
+BT4. Tìm ước chung lớn nhất của hai số a và b ?
 (Ko cần làm giao diện)
 
-BT4. In ra ô bàn cờ 8x8 (mỗi ô kích thước 100x100px) màu đen trắng xen kẽ.
+BT5. In ra ô bàn cờ 8x8 (mỗi ô kích thước 100x100px) màu đen trắng xen kẽ.
 
