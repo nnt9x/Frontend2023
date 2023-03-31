@@ -17,5 +17,19 @@ BT3. Nhập x, kiểm tra x có phải là số nguyên tố hay ko?
 BT4. Tìm ước chung lớn nhất của hai số a và b ?
 (Ko cần làm giao diện)
 
+VD: 4 va 6 -> UCLN ? 2
+VD: 8 va 16 -> UCLN 8
+
+VD: 1000 và  512 ? 
+
+/*
+Buoc 1: Nhap a, b
+Buoc 2: t = min(a, b)
+Buoc 3: Tim i chạy t -> 1
+Neu a % i == 0 && b % i == 0 -> Tim so dau tien
+-> i là UCLN
+*/
+
+
 BT5. In ra ô bàn cờ 8x8 (mỗi ô kích thước 100x100px) màu đen trắng xen kẽ.
 

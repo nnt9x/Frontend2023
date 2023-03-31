@@ -30,7 +30,7 @@
         const x = parseInt(vNumber.value);
         
         let flag = true;
-        let t = x/2;
+        let t = Math.sqrt(x);
         for (let i = 2; i <= t; i++) {
           if (x % i == 0) {
             flag = false;

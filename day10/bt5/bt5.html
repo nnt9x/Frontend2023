@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ô bàn cờ</title>
+    <style>
+      .white-box {
+        height: 100px;
+        width: 100px;
+        border: 1px black solid;
+        box-sizing: border-box;
+        background-color: white;
+        float: left;
+      }
+      .black-box {
+        height: 100px;
+        width: 100px;
+        border: 1px black solid;
+        box-sizing: border-box;
+        background-color: black;
+        float: left;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <!-- <div class="white-box"></div>
+        <div class="black-box"></div>
+        <div class="white-box"></div>
+        <div class="clear"></div>
+
+        <div class="black-box"></div>
+        <div class="white-box"></div>
+        <div class="black-box"></div>
+        <div class="clear"></div>
+
+        <div class="white-box"></div>
+        <div class="black-box"></div>
+        <div class="white-box"></div> -->
+    </div>
+    <script>
+      const row = 8;
+      const col = 8;
+
+      // 2 vong lap: vong lap lớn in ra số dòng
+      // vòng lặp con -> in ra chi tiết dòng.
+
+      const vMain = document.getElementById("main");
+
+      for (let i = 0; i < row; i++) {
+        for (let j = 0; j < col; j++) {
+          const div = document.createElement("div");
+          if ((i % 2 == 0 && j % 2 == 0) || (i % 2 != 0 && j % 2 != 0)) {
+            // Vi tri o trang
+            div.classList.add("white-box");
+          } else {
+            // O den
+            div.classList.add("black-box");
+          }
+          vMain.appendChild(div);
+        }
+        const vClear = document.createElement("div");
+        vClear.classList.add("clear");
+        vMain.appendChild(vClear);
+      }
+    </script>
+  </body>
+</html>
