@@ -1,0 +1,22 @@
+BT1:
+
+Trăm trâu, trăm cỏ
+
+Trâu đứng ăn năm
+
+Trâu nằm ăn ba
+
+Lụ khụ trâu già
+
+Ba con một bó
+
+Hỏi có bao nhiêu con trâu đứng, trâu nằm, trâu già?
+
+-> Sử dụng vòng lặp -> kiểu thay số.
+Goi trau dung: x, trau nam: y, trau gia: z
+x + y + z = 100
+5x + 3y + z/3 = 100
+
+5x < 100 -> x < 20    1-19
+3y < 100 -> y <= 33   1-33
+z/3 < 100 -> z < 100    3-98
