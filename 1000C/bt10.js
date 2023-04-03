@@ -32,6 +32,7 @@ function hamMu(x, n){
     }
 }
 
+
 console.log(hamMu(-1.2333434,0));
 console.log(hamMu(2, 3));
 console.log(hamMu(2, -3));
