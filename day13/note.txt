@@ -1,0 +1,11 @@
+BT1. Tạo 1 file bt1.html 
+Cho phép người dùng nhập vào kích thước 2 cạnh của
+hình chữ nhật: chiều dài (px), chiều rộng (px) và màu sắc (select-option)
+
+Khi người dùng chọn xong -> Tính
+
+Th1: nếu dữ liệu hợp lệ
+-> In ra hình chữ nhật có kích thước và màu sắc tương đương.
+-> hiển thị thêm chu vi và diện tích (yêu cầu sử dụng Arrow function)
+
+TH2: nếu dữ liẹu ko hợp lệ -> đưa ra alert cảnh báo.
