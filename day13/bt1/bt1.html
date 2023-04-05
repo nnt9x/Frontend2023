@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-1">Vẽ hình chữ nhật</h1>
+        <input value="100" onchange="veHinhChuNhat()" class="form-control" id="vChieuDai" type="number" placeholder="Chiều dài:">
+        <br>
+        <input value="100" onchange="veHinhChuNhat()" class="form-control" id="vChieuRong" type="number" placeholder="Chiều rộng:">
+        <br>
+        <select id="vMauSac" class="form-control" onchange="veHinhChuNhat()">
+            <option selected value="red">Đỏ</option>
+            <option value="green">Xanh lá</option>
+            <option value="royalblue">Xanh da trời</option>
+            <option value="violet">Màu tím</option>
+        </select>
+        <br>
+        <button onclick="veHinhChuNhat()" class="btn btn-primary">Vẽ hình chữ nhật</button>
+        <br>
+        <br>
+
+        <div id="result" class="container">
+            <!-- Hinh chu nhat hien thi tai day -->
+            <p id="info" class="text-center"></p>
+            <br>
+            <div id="hcn" style="margin: auto;"></div>
+            
+        </div>
+    </div>
+    <script>
+        // Arrow function
+        let chuVi = (a, b) => (a + b) * 2;
+        
+        let dienTich = (a, b) =>  a * b;
+
+        let veHinhChuNhat = () =>{
+            // Bước 1: lấy dữ liệu từ input, select-option
+            const vChieuDai = document.getElementById("vChieuDai");
+            const vChieuRong = document.getElementById("vChieuRong");
+            const vMauSac = document.getElementById("vMauSac");
+
+            // console.log(vChieuDai.value, vChieuRong.value, vMauSac.value);
+            let cDai = parseFloat(vChieuDai.value);
+            let cRong = parseFloat(vChieuRong.value);
+            if(cDai <= 0 || cRong <= 0){
+                alert("Dữ liệu không hợp lệ!");
+                return;
+            }
+            // Tao hinh chu nhat 
+            // Tao the div co style width = cDai, height = cRong;
+            let hcnDiv = document.getElementById("hcn");
+            hcnDiv.style.width = cDai+"px";
+            hcnDiv.style.height = cRong+"px";
+            hcnDiv.style.backgroundColor= vMauSac.value;
+            
+            let cv = chuVi(cDai, cRong);
+            let dt = dienTich(cDai, cRong);
+            let info = "Hinh chu nhat co chu vi = "+cv+", dien tich="+dt;
+            
+            document.getElementById("info").innerHTML = info;
+        }
+        
+    </script>
+</body>
+</html>
