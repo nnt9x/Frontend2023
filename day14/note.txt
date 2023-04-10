@@ -1,0 +1,4 @@
+BT1. Tạo 1 mảng gồm 10 phần tử, các giá trị ngẫu nhiên từ 0-999
+a. In ra mảng vừa tạo
+b. Tìm số lớn nhất trong mảng
+c. Tính tổng các số dương trong mảng
