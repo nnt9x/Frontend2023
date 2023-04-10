@@ -17,3 +17,12 @@ for(let i = 1; i < arr.length; i++){
     }
 }
 console.log("Max = ", max);
+
+// c. Tinhs tong so duong trongg mang
+let t = 0;
+arr.forEach(item => {
+    if(item > 0){
+        t = t + item;
+    }
+});
+console.log("Tổng t = ", t);
