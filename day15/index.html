@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main {
+        width: 500px;
+        height: 200px;
+        margin: auto;
+        background-color: royalblue;
+      }
+    </style>
+  </head>
+  <body onload="loadSuccess()">
+    <div>
+      <div id="main" onclick="changeBgDiv()">
+        <!-- Onclick, thay đổi màu nền của thẻ div xanh -> đỏ -->
+      </div>
+
+      <!-- Input khi người dung nhạp dữ liệu vào input -> nội dung thẻ P bên dưới 
+       sẽ thay đổi theo (p - là chuỗi viết hoa từ input) -->
+      <input id="vInput" type="text" onchange="getContent()">
+      <p id="vContent"></p>
+      
+      <!-- Khi trang web tải xong hết tài nguyên -> hiện thông báo sẵn sàng sử dụng -->
+      <img src="https://wallpaperaccess.com/full/752775.jpg" />
+
+    </div>
+
+    <script>
+        function loadSuccess(){
+            alert("Load xong tai nguyen");
+        }
+      function changeBgDiv() {
+        const vDiv = document.getElementById("main");
+        vDiv.style.backgroundColor = "red";
+      }
+      function getContent(){
+        // Bước 1: Lấy nội dung input
+        // Bước 2: Chuyển nội dung sang viết hoa
+        // Bước 3: set giá trị đó cho p
+        const mContent = document.getElementById("vInput").value;
+        document.getElementById("vContent").innerHTML = mContent.toUpperCase();
+      }
+
+    </script>
+  </body>
+</html>
