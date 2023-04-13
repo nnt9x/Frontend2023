@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Mỗi lần load lại website nội dung text thẻ p lại có một
+    màu ngẫu nhiên: xanh, đỏ hoặc vàng... -->
+    <!-- Phải dùng JavaScript -->
+    <!-- Làm thế nào để JavaScript có thể thay đổi được tất 
+    cả thẻ p?? -->
+
+</head>
+<body onload="changeTextColorRandom()">
+    <!-- tag name -->
+    <p>Hello world</p>
+    <p>Java</p>
+    <div>
+        <p>Python</p>
+        <p>PHP</p>
+        <p>C/C++</p>
+    </div>
+    <script>
+        function changeTextColorRandom(){
+            // Mang mau
+            const arrColors = ["blue","green","red","yellow", "violet"];
+            // Tao ngau nhien chi so -> chon mau tu chi so
+            const indexRd = Math.floor(Math.random() * 5); // [0, 4]
+            const color = arrColors[indexRd];
+            // Thay doi mau cho tat ca the p?
+            const vP = document.getElementsByTagName("p");
+            console.log(vP);
+            // Dung vong lap de thay doi style cho tung the p
+            for(let i = 0; i < vP.length; i++){
+                vP[i].style.color = color;
+            }
+        }
+    </script>
+</body>
+</html>
