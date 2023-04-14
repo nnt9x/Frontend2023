@@ -1,0 +1,16 @@
+.car{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rosybrown;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.car-image{
+    width: 250px;
+}
+.car-name{
+    font-size: 20px;
+    font-weight: bolder;
+}
