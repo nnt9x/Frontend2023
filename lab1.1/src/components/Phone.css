@@ -1,0 +1,39 @@
+.phone{
+    padding: 16px;
+    text-align: center;
+    border: 1px solid salmon;
+    border-radius: 8px;
+    margin: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.phone-image{
+    width: 250px;
+}
+.phone-name{
+    font-weight: bold;
+    font-size: 18px;
+}
+.phone-screen, .phone-resolution {
+    font: 14px/18px Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px 8px !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 2px;
+    display: inline-flex !important;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    margin-right: 4px;
+    overflow: hidden;
+    background: #fff;
+    border-color: #2f80ed !important;
+    color: #2f80ed !important;
+}
+
+.phone-price{
+    font-size: 16px;
+    font-weight: bold;
+}
