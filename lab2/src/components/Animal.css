@@ -1,0 +1,7 @@
+.animal img{
+    transition: transform .2;
+}
+
+.animal img:hover{
+    transform: rotate(15deg);
+}
