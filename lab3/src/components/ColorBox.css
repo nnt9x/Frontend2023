@@ -1,0 +1,17 @@
+.color-box{
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    line-height: 200px;
+    box-sizing: border-box;
+}
+.box-shape{
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+
+.color-box:hover .box-shape{
+    transform: rotate(20deg);
+    font-size: x-large;
+}
