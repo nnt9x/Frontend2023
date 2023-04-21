@@ -14,7 +14,7 @@ export function Box(props){
         }
     }
 
-    return <div onClick={changeColor} className="box" 
+    return <div onMouseOver={changeColor} className="box" 
     style={{backgroundColor: stateColor}}>
         
     </div>
