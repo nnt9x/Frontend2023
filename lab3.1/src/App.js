@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import { Dice } from './components/Dice';
+import { NewDice } from './components/NewDice';
 
 function App() {
 
@@ -14,8 +15,11 @@ function App() {
   return (
     <div className="App">
       <div onClick={randomDice} style={{width:"400px"}}>
-        <p style={{color:"red", fontSize:"40px"}}>{value}</p>
-        <Dice value={"" + value}/>
+        {/* <p style={{color:"red", fontSize:"40px"}}>{value}</p>
+        <Dice value={"" + value}/> */}
+        
+        <NewDice value="1"/>
+        <NewDice value="2"/>
       </div>
     </div>
   );
