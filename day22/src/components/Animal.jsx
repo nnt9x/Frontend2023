@@ -6,6 +6,7 @@ export function Animal(props) {
 			<img className="img-fluid" src={props.src} 
             alt={props.name} />
             <p>{props.name}</p>
+            <button onClick={()=>props.removeItem(props.id)} className="btn btn-danger">Xoá</button>
 		</div>
 	);
 }
