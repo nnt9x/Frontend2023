@@ -1,0 +1,24 @@
+{
+    "animals":[
+        {
+            "id":1,
+            "name":"cat",
+            "src":"https://d2zp5xs5cp8zlg.cloudfront.net/image-30938-800.jpg"
+        },
+        {
+            "id":2,
+            "name":"dog",
+            "src":"https://media.healthyfood.com/wp-content/uploads/2017/03/Pawsome-diet-tips-for-pets-iStock-185287956-2-500x500.jpg"
+        },
+        {
+            "id":3,
+            "name":"lion",
+            "src":"https://i1.sndcdn.com/avatars-000449264574-g660lg-t500x500.jpg"
+        },
+        {
+            "id":4,
+            "name":"tiger",
+            "src":"https://i.pinimg.com/564x/b1/03/fa/b103fae41c73594e21338373f703e397.jpg"
+        }
+    ]
+}
