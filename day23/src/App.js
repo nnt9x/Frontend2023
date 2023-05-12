@@ -14,7 +14,7 @@ function App() {
 
 	function getWeather(city) {
 		// tao url
-		const api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"; // thay bang api key cua ban
+		const api_key = "928133397391e6af373468b74849e7ab";
 		const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}&units=metric&lang=vi`;
 		// call api
 		fetch(url)
