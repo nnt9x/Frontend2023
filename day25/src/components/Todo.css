@@ -1,0 +1,9 @@
+.todo-complete {
+  text-decoration: line-through;
+  font-style: italic;
+  color: gray;
+}
+
+.todo{
+    color: black;
+}
