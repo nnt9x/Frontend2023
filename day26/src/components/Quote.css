@@ -1,0 +1,12 @@
+.quote{
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 4px;
+    box-sizing: border-box;
+}
+.quote p{
+    font-size: larger;
+    font-family: monospace;
+    color: red;
+}
