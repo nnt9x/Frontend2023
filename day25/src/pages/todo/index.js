@@ -9,7 +9,7 @@ export function TodoList(props) {
 	// Sau khi lay xong => tra ve todo
 
 	const [todos, setTodos] = useState([]);
-    const [countCompleted, setCountCompleted] = useState(0);
+	const [countCompleted, setCountCompleted] = useState(0);
 
 	useEffect(() => {
 		// Lay du lieu tu DummyJSON ve
@@ -17,9 +17,12 @@ export function TodoList(props) {
 			.then((res) => res.json())
 			.then((data) => {
 				setTodos(data.todos);
-                const count = data.todos.filter((item) => item.completed === true).length;
-                setCountCompleted(count);
-            })
+				let count = 0;
+				data.todos.forEach((item) => {
+					if (item.completed) count++;
+				});
+				setCountCompleted(count);
+			})
 			.catch((err) => {
 				alert("Co loi xay ra");
 			});
@@ -43,7 +46,7 @@ export function TodoList(props) {
 	return (
 		<div>
 			<p className="display-1">Danh sách công việc</p>
-            <p>Số lượng đã hoàn thành: {countCompleted}</p>
+			<p>Số lượng đã hoàn thành: {countCompleted}</p>
 			<ol>{vTodoList}</ol>
 		</div>
 	);
