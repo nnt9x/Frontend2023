@@ -1,0 +1,8 @@
+.user{
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 8px;
+    min-height: 400px;
+}
