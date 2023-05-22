@@ -1,0 +1,10 @@
+Tạo project đơn giản
+gồm App: root Component
+
+Có 1 state là màu sắc: input
+
+App.js  chứa 1 state: input màu sắc
+--|Parent.jsx
+   --|Child.jsx sử dụng input màu sắc đó để hiển thị
+      (giống như box)
+
