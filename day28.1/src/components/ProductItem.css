@@ -1,0 +1,12 @@
+.product-item {
+	padding: 4px;
+	border: 1px solid black;
+    color: red;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 4px;
+}
+
+.product-item :hover{
+    background-color: #CCC;
+}
