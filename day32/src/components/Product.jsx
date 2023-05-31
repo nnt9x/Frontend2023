@@ -11,7 +11,6 @@ export function Product(props) {
             showCancelButton: true,
             confirmButtonText: `Thêm`,
             denyButtonText: `Không`,
-            
         })
     }
 
